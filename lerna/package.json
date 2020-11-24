@@ -1,13 +1,39 @@
 {
   "name": "root",
   "private": true,
+  "scripts": {
+    "lint": "lerna run lint",
+    "test": "lerna run test",
+    "locales:lint": "lerna run locales:lint",
+    "locales:fix": "lerna run locales:fix",
+    "verify": "yarn lint && yarn locales:lint && yarn test"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && yarn locales:lint",
+      "pre-push": "yarn locales:fix && yarn test"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,js,tsx,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.json": [
+      "prettier --write"
+    ]
+  },
   "devDependencies": {
     "@vtex/intl-equalizer": "^2.5.0",
     "@vtex/prettier-config": "^0.3.5",
+    "@vtex/tsconfig": "^0.5.5",
     "eslint": "^7.14.0",
     "eslint-config-vtex": "^12.8.11",
     "eslint-config-vtex-react": "^6.8.3",
+    "husky": "^4.3.0",
     "lerna": "^3.22.1",
-    "prettier": "^2.2.0"
+    "lint-staged": "^10.5.2",
+    "prettier": "^2.2.0",
+    "typescript": "^4.1.2"
   }
 }

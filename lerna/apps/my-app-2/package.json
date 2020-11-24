@@ -10,7 +10,8 @@
     "prepare": "cd ./react && yarn",
     "lint": "cd ./react && tsc --noEmit && eslint --ext js,jsx,ts,tsx .",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json}\"",
-    "lint:locales": "intl-equalizer",
+    "locales:lint": "intl-equalizer",
+    "locales:fix": "intl-equalizer --fix",
     "test": "cd ./react && yarn test"
   }
 }
