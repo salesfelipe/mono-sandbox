@@ -33,4 +33,4 @@ I can fix this...
 
 ### Next steps
 
-Fix
+- Integrate with yarn workspaces.
