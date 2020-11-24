@@ -2,7 +2,7 @@
   "name": "CHANGE_ME",
   "version": "0.0.0",
   "scripts": {
-    "test": "vtex-test-tools test"
+    "test": "vtex-test-tools test --passWithNoTests"
   },
   "dependencies": {
     "apollo-client": "^2.6.8",
