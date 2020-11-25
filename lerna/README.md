@@ -26,11 +26,6 @@ the deps in all apps, the ones located inside the `/react` folder.
 - **pre-commit**: Run eslint and prettier on the staged files and also verify for missing locale messages.
 - **pre-push**: Fix the intl message order and run all the tests.
 
-### Issues
-
-I have duplicated the `tsconfig.json` on `/lerna` folder and also inside the apps `/react` folder. I need this because of the lint-staged config, dunno how
-I can fix this...
-
 ### Next steps
 
 - Integrate with yarn workspaces.
