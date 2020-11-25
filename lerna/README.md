@@ -11,11 +11,11 @@ of VTEX apps, meaning that each app will have its own **CHANGELOG**.
 With this approach I was able to concentrate all eslint/prettier configs on the root `package.json` and I'm able
 to run batch actions on all apps, actions like: run all tests, format all files, etc.
 
-To test this out you should first run `yarn` on the root of this folder and after `lerna bootstrap`, which will install
-the deps in all apps, the ones located inside the `/react` folder.
+To test this out you should first run `yarn start` on the root of this folder.
 
 ### Features
 
+- `yarn start`: will install all the deps of the apps.
 - `yarn lint`: will do type checking and eslint check in all files.
 - `yarn test`: will run all the tests.
 - `locales:lint`: will verify some intl messages are missing or not using the **@vtex/intl-equalizer**.

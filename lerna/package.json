@@ -2,6 +2,7 @@
   "name": "root",
   "private": true,
   "scripts": {
+    "start": "yarn && lerna bootstrap",
     "lint": "lerna run lint",
     "test": "lerna run test --parallel",
     "locales:lint": "lerna run locales:lint",

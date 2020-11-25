@@ -1093,11 +1093,6 @@
   resolved "https://registry.yarnpkg.com/@vtex/prettier-config/-/prettier-config-0.3.5.tgz#99e44c6235c541a8d2b7cd50fc9662c7bc17309a"
   integrity sha512-/mIPrS2Qz9vG//aRxk/hi3Np/NWfTbbJakVuy+ouY5Gh6tfYfC83neAm4KSJsNVVcIcPP1Shc4/Y9zVmgmNCRA==
 
-"@vtex/tsconfig@^0.5.5":
-  version "0.5.5"
-  resolved "https://registry.yarnpkg.com/@vtex/tsconfig/-/tsconfig-0.5.5.tgz#5456b66696389f269768a5d76e11ae7f4c02b1b2"
-  integrity sha512-uOFLkWLBlG8bpXuZWUu3VKJKL1sU49YAXDkxOkLJ7GRDQBXjifQ0fPjJ3vlQVFDi0fRjNZbtHamtlYf8b1GeGg==
-
 "@zkochan/cmd-shim@^3.1.0":
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/@zkochan/cmd-shim/-/cmd-shim-3.1.0.tgz#2ab8ed81f5bb5452a85f25758eb9b8681982fd2e"
